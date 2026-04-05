@@ -1,0 +1,279 @@
+:root {
+    --bg-main: #0A0A0A;
+    --card-surface: #1A1A1A;
+    --brand-orange: #FF6D00;
+    --brand-orange-hover: #E66200;
+    --text-primary: #FFFFFF;
+    --text-secondary: #888888;
+    --input-fill: #2A2A2A;
+    --border-soft: #333333;
+    --transition-speed: 0.2s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+    line-height: 1.5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 4rem;
+}
+
+.logo {
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo strong {
+    font-size: 28px;
+}
+
+.logo i {
+    font-size: 28px;
+    rotate: 130deg;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--brand-orange);
+    margin-right: 10px;
+}
+
+.logo i:hover {
+    transform: rotate(360deg);
+    transition: 0.6s ease-in-out;
+    cursor: pointer;
+}
+
+
+.btn-outline {
+    background: transparent;
+    border: 3px solid var(--brand-orange);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background var(--transition-speed);
+}
+
+.btn-outline:hover {
+    background: var(--brand-orange);
+    color: white;
+}
+
+.login-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.login-card {
+    background: var(--card-surface);
+    padding: 3rem;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 460px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.card-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.card-header h1 {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-header p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.form-group {
+    margin-bottom: 1.25rem;
+}
+
+.label-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+label {
+    font-size: 0.7rem;
+    color: var(--text-secondary);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.link-small {
+    font-size: 0.75rem;
+    color: var(--brand-orange);
+    text-decoration: none;
+}
+
+input[type="email"],
+.input-icon-wrapper input {
+    width: 100%;
+    background: var(--input-fill);
+    border: 1px solid transparent;
+    padding: 0.9rem 1rem;
+    border-radius: 8px;
+    color: white;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border var(--transition-speed);
+}
+
+input:focus {
+    border-color: #444;
+}
+
+.input-icon-wrapper {
+    position: relative;
+}
+
+.input-icon-wrapper i {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-secondary);
+    cursor: pointer;
+}
+
+.form-options {
+    margin: 1.5rem 0;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.btn-submit {
+    width: 100%;
+    background: var(--brand-orange);
+    color: white;
+    border: none;
+    padding: 1rem;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(255, 109, 0, 0.2);
+    transition: transform 0.1s, background var(--transition-speed);
+}
+
+.btn-submit:active {
+    transform: scale(0.98);
+}
+
+.btn-submit:hover {
+    background: var(--brand-orange-hover);
+}
+
+.social-integration {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-soft);
+    text-align: center;
+}
+
+.integration-label {
+    font-size: 0.65rem;
+    color: var(--text-secondary);
+    letter-spacing: 1.5px;
+    margin-bottom: 1.25rem;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.btn-social {
+    flex: 1;
+    background: #222;
+    color: white;
+    border: 1px solid var(--border-soft);
+    padding: 0.75rem;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 0.9rem;
+    transition: background var(--transition-speed);
+}
+
+.btn-social:hover {
+    background: #2a2a2a;
+}
+
+.btn-social img {
+    width: 18px;
+}
+
+.card-footer {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.card-footer a {
+    color: var(--brand-orange);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    gap: 20px;
+    color: #D6BFA8;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+
+
+@media (max-width:768px) {
+    footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 200px;
+
+    }
+
+}

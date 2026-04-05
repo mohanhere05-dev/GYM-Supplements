@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRO-GAIN | Supplements</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-dumbbell"></i>
+            <h1>PRO-<span>GAIN</span></h1>
+            <div class="navbar">
+                <a href="index.html" target="_blank">HOME</a>
+                <a href="about.html" target="_blank">ABOUT</a>
+                <a href="#" target="_blank">SUPPLEMENTS</a>
+                <a href="contact.html" target="_blank">CONTACT</a>
+            </div>
+        </div>
+
+        <div class="btn">
+            <input type="text" placeholder="🔍︎ Search Supplements....">
+            <button><i class="fa-solid fa-cart-shopping"></i></button>
+            <button onclick="logout()"><i class="fa-regular fa-circle-user"></i><span>Logout</span></button>
+            <button class="hamburger"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </header>
+
+    <section class="hero-container">
+        <div class="hero-head">
+            <p class="industry">I N D U S T R I A L &nbsp;&nbsp; S T R E N G T H &nbsp;&nbsp; N U T R I T I O N</p>
+            <h1>FORGED IN THE GYM.</h1>
+            <h1 class="orange">REFINED BY SCIENCE.</h1>
+            <p class="para">Heavy-duty supplements engineered for elite performance. <br> No filters, no shortcuts -
+                only pure chemical advantage.</p>
+            <a href="category.html"><button class="shop-btn">SHOP NOW</button></a>
+            <a href="#view-science"><button class="view-btn">VIEW SCIENCE</button></a>
+        </div>
+    </section>
+
+    <section class="cards">
+        <section class="container-card-1">
+            <div class="card">
+                <h1>PROTIEN LAB</h1>
+                <p>Highest purity isolate for rapid muscle synthesis.</p>
+                <a href="category.html"><button>BROWSE ISOLATE &nbsp; ➜</button></a>
+            </div>
+        </section>
+
+        <section class="container-card-2">
+            <div class="card">
+                <h1>POWER CORE</h1>
+                <p>Micronized creatine and performance essentials.</p>
+                <a href="category.html"><button>BROWSE STRENGTH &nbsp; ➜</button></a>
+            </div>
+        </section>
+
+        <section class="container-card-3">
+            <div class="card">
+                <h1>ENERGY IGNITION</h1>
+                <p>High-stim pre-workouts for maximum drive.</p>
+                <a href="category.html"><button>BROWSE ENERGY &nbsp; ➜</button></a>
+            </div>
+        </section>
+    </section>
+
+    <section class="hero-2">
+        <section class="performance">
+            <div class="left">
+                <h1>ENGINEERED PERFORMANCE</h1>
+                <P>Bestselling formulas for peak physical output.</P>
+            </div>
+            <div class="right">
+                <a href="category.html">VIEW ALL GEAR</a>
+            </div>
+        </section>
+
+        <section class="product-grid">
+            <div class="product-card">
+                <div class="badge-1">PUREST ISOLATE</div>
+                <div class="product-img">
+                    <img src="img/Protien-1.jpg" alt="Protein" height="500px" width="500px" />
+                </div>
+                <div class="product-info">
+                    <h3>ISO-WHEY PRO MAX</h3>
+                    <p class="price">₹2299.00</p><span class="type">✰ ✰ ✰ ✰ ✰</span>
+                    <p class="desc">25g Protien | 0g Sugar | 5.5g BCAAs per serving. Lab-verified purity.</p>
+                    <a href="category.html"><button class="add-btn"><i class="fa-solid fa-cart-shopping"></i> ADD TO
+                            CART</button></a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="badge-2">MAX VOLUME</div>
+                <div class="product-img">
+                    <img src="img/vitamin.jpg" alt="Protein" height="500px" width="500px" />
+                </div>
+                <div class="product-info">
+                    <h3>NITROX PRE-IGNITE</h3>
+                    <p class="price">₹899.00</p><span class="type">✰ ✰ ✰ ✰ ✰</span>
+                    <p class="desc">Extreme pump and focused energy. 350mg Caffeine + Citrulline Malate.</p>
+                    <a href="category.html"><button class="add-btn"><i class="fa-solid fa-cart-shopping"></i> ADD TO
+                            CART</button></a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="badge-3">PURE MUSCLE</div>
+                <div class="product-img">
+                    <img src="img/creatine.jpg" alt="Protein" height="500px" width="500px" />
+                </div>
+                <div class="product-info">
+                    <h3>MICRONIZED CREATINE</h3>
+                    <p class="price">₹599.00</p><span class="type">✰ ✰ ✰ ✰ ✰</span>
+                    <p class="desc">5g Pharmaceutical grade Creatine Monohydrate. Zero flavor, maximum impact.</p>
+                    <a href="category.html"><button class="add-btn"><i class="fa-solid fa-cart-shopping"></i> ADD TO
+                            CART</button></a>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section class="hero-3" id="view-science">
+        <div class="program-left">
+            <h1>THE PROGRAM STANDARD</h1>
+            <p>We don't do "proprietary blends." We do science. Every scoop is a result of rigorous clinical testing and
+                industrial-grade quality control.</p>
+            <div class="features">
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-microscope"></i></div>
+                    <div class="text">
+                        <h3>LAB TESTED</h3>
+                        <p>3rd party verification for every batch.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-medal"></i></i></div>
+                    <div class="text">
+                        <h3>CLEAN SPORT</h3>
+                        <p>Banned substance free certifications.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-bolt"></i></div>
+                    <div class="text">
+                        <h3>BIO-ACTIVE</h3>
+                        <p>Optimized for rapid bioavailability.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa-brands fa-hubspot"></i></div>
+                    <div class="text">
+                        <h3>USA MADE</h3>
+                        <p>Forged in GMP certified facilities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="program-right"></div>
+    </section>
+
+    <section class="hero-4">
+        <h1>JOIN THE FRONTLINE</h1>
+        <p>Get exclusive access to new drops, scientific breakthroughs, and <br><span>training protocols.</span></p>
+        <div class="input">
+            <input type="text" placeholder="YOUR MILITARY-GRADE EMAIL">
+            <button>JOIN NOW</button>
+        </div>
+    </section>
+
+    <section class="hero-5">
+        <div class="progain">
+            <h4> <i class="fa-solid fa-dumbbell"></i> &nbsp;&nbsp;PROGAIN</h4>
+            <p>Supplements for the uncompromising. <br> Built for the hardgainers, the grinders, <br> and the elite
+                performers who demand <br> total transparency.</p>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+
+        <div class="deploy">
+            <h4>DEPLOYMENT</h4>
+            <ul>
+                <li>Protien</li>
+                <li>Pre-Workouts</li>
+                <li>Strength Stack</li>
+                <li>Apparel</li>
+            </ul>
+        </div>
+
+        <div class="command">
+            <h4>COMMAND CENTER</h4>
+            <ul>
+                <li>Lab Result</li>
+                <li>Shipping Ops</li>
+                <li>Intel(Blog)</li>
+                <li>Careers</li>
+            </ul>
+        </div>
+
+        <div class="direct">
+            <h4>DIRECT LINE</h4>
+            <p>24/7 Support for athelets.</p>
+            <p class="address">HQ:101 Forge Way, Iron city, OH</p>
+            <h2>1-800-PRO-GAIN</h2>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 ProGain Nutrition. All rights reserved.</p>
+        <div class="privacy">
+            <a href="">PRIVACY PROTOCOL</a>
+            <a href="">TERMS OF ENGAGEMENT</a>
+        </div>
+    </footer>
+
+    <script src="home.js"></script>
+</body>
+
+</html>

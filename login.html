@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PROGAIN | Access Your Dashboard</title>
+
+    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-dumbbell"></i>
+            <strong>PROGAIN</strong>
+        </div>
+        <nav>
+            <button class="btn-outline" onclick="logout()">SignUp</button>
+        </nav>
+    </header>
+
+    <main class="login-wrapper">
+        <section class="login-card">
+            <header class="card-header">
+                <h1>Welcome Back</h1>
+                <p>Enter your credentials to access your fitness dashboard</p>
+            </header>
+
+            <form id="loginForm" autocomplete="on">
+                <div class="form-group">
+                    <label for="email">EMAIL ADDRESS</label>
+                    <input type="email" id="email" placeholder="name@email.com" required />
+                </div>
+
+                <div class="form-group">
+                    <div class="label-row">
+                        <label for="password">PASSWORD</label>
+                        <a href="#" class="link-small">Forgot?</a>
+                    </div>
+                    <div class="input-icon-wrapper">
+                        <input type="password" id="password" placeholder="••••••••" required />
+                        <i class="far fa-eye" id="togglePassword" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+                <div class="form-options">
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="remember" />
+                        <span class="checkmark"></span>
+                        Remember this device
+                    </label>
+                </div>
+
+                <button type="submit" class="btn-submit">LOG IN </button>
+            </form>
+
+            <div class="social-integration">
+                <p class="integration-label">SECURE LOGIN WITH GOOGLE & APPLE</p>
+                <div class="social-buttons">
+                    <button type="button" class="btn-social">
+                        <img src="img/google.png" alt="Google Logo" class="social-icon" />
+                        Google
+                    </button>
+                    <button type="button" class="btn-social">
+                        <i class="fab fa-apple"></i>
+                        Apple
+                    </button>
+                </div>
+            </div>
+
+            <footer class="card-footer">
+                <p>Don’t have an account? <a href="login.html">Create Profile</a></p>
+            </footer>
+        </section>
+    </main>
+    <hr style="box-shadow: 0 0 2px #6F7C8E;" />
+    <footer>
+        <center>
+            <p>&copy; 2026 ProGain Nutrition. All rights reserved.</p>
+        </center>
+    </footer>
+
+
+    <script src="login.js"></script>
+</body>
+
+</html>
