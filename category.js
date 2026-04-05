@@ -1,3 +1,13 @@
+ if (localStorage.getItem("isLoggedIn") !== "true") {
+        window.location.href = "login.html";
+    }
+
+    function logout() {
+        localStorage.removeItem("isLoggedIn");
+        window.location.href = "login.html";
+    }
+    
+
 document.addEventListener('DOMContentLoaded', () => {
     const STORAGE_KEY = 'progain_cart_items';
     let cart = [];
@@ -8,7 +18,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const cartTotalDisplay = document.getElementById('cartTotal');
     const cartBadge = document.querySelector('.count');
     const addToCartButtons = document.querySelectorAll('.add-btn');
+    const hamburger = document.querySelector('.hamburger');
+    const sidebar = document.querySelector('.sidebar');
 
+
+   
 
     function updateCartUI() {
         cartItemsList.innerHTML = '';
@@ -134,6 +148,13 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('closeCart').addEventListener('click', closeCart);
     cartOverlay.addEventListener('click', closeCart);
 
+    if (hamburger) {
+        hamburger.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
+        });
+    }
+
     loadCart();
     updateCartUI();
+
 });

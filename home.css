@@ -143,17 +143,31 @@ header {
     display: none;
 }
 
-@media (max-width:1024px) {
-    .navbar a {
-        display: none;
+@media (max-width:480px) {
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background-color: #1F1713;
+        border-bottom: 1px solid #3b3b3b;
+        padding: 16px 20px;
+        z-index: 999;
     }
 
+    .navbar {
+        display: none;
+        margin-left: 200px;
+        gap: 0;
+    }
+
+    .navbar a{
+        margin-right: 30px;
+    }
+    
     .logo {
         margin-left: -10px;
-    }
-
-    .btn {
-        margin-right: 10px;
     }
 
     .hamburger {
@@ -163,15 +177,10 @@ header {
     .navbar.active {
         display: flex;
         flex-direction: column;
-        width: 250px;
+        width: 150px;
         border-radius: 12px;
-        height: 400px;
-        top: 70px;
-        right: 30px;
-        padding-top: 20px;
-        padding-left: 20px;
-        padding-right: 20px;
-        position: absolute;
+        height: 220px;
+        top: 60px;
         background-color: #1F1713;
         color: white;
         transform: scaleX(1.1);
@@ -180,13 +189,11 @@ header {
 
     .navbar.active a {
         display: block;
-        padding: 10px;
         border-bottom: 4px solid white;
-        width: 100%;
     }
 }
 
-@media (max-width:768px) {
+@media (max-width) {
     .btn input {
         display: none;
     }
@@ -385,7 +392,7 @@ header {
     transition: 0.3s ease-in-out;
 }
 
-@media (max-width:768px) {
+@media (max-width) {
     .cards {
         display: block;
         margin-left: 150px;
@@ -555,7 +562,7 @@ header {
 }
 
 
-@media (max-width:768px) {
+@media (max-width) {
     .product-grid {
         display: flex;
         flex-direction: column;
@@ -656,7 +663,7 @@ header {
 
 }
 
-@media (max-width:768px) {
+@media (max-width:480px) {
     .hero-3 {
         display: block;
 
@@ -686,7 +693,8 @@ header {
     }
 
     .features .box {
-        margin-bottom: 30px;
+        margin-bottom: 50px;
+        
     }
 
     .features .box p h1 {
@@ -728,15 +736,17 @@ header {
 }
 
 .hero-4 .input {
-    margin-right: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
 }
 
 .hero-4 .input input {
     font-size: 16px;
     padding: 24px;
+    max-width: 1200px;
     padding-right: 700px;
-    margin-right: 20px;
-    margin-left: 400px;
     background: #ff7b47;
     border: #555;
     border-radius: 6px;
@@ -772,7 +782,7 @@ header {
     transition: 0.2s ease-in-out;
 }
 
-@media (max-width:768px) {
+@media (max-width) {
     .hero-4 {
         display: block;
         text-align: center;
@@ -892,7 +902,7 @@ header {
     font-weight: 800;
 }
 
-@media (max-width:768px) {
+@media (max-width) {
     .hero-5 {
         display: block;
         padding-left: 100px;
@@ -928,7 +938,7 @@ footer {
     transition: 0.3s ease-in-out;
 }
 
-@media (max-width:768px) {
+@media (max-width) {
     footer {
         display: flex;
         justify-content: space-around;
@@ -942,4 +952,414 @@ footer {
         font-size: 10px;
     }
 
+}
+
+/* Mobile Responsiveness: max-width 480px */
+@media (max-width: 480px) {
+    html,
+    body {
+        min-width: 0;
+        overflow-x: hidden;
+    }
+
+    header {
+        padding: 12px 16px;
+        gap: 10px;
+        flex-wrap: nowrap;
+    }
+
+    .logo {
+        margin-left: 0;
+        gap: 6px;
+        flex-shrink: 0;
+        width: auto;
+        justify-content: flex-start;
+    }
+
+    .logo i {
+        font-size: 24px;
+    }
+
+    .logo h1 {
+        font-size: 16px;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .navbar.active {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 60px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background-color: #1F1713;
+        border-bottom: 1px solid #3b3b3b;
+        padding: 16px 20px;
+        z-index: 999;
+    }
+
+    .navbar.active a {
+        display: block;
+        padding: 12px 0;
+        border-bottom: 1px solid #333;
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .btn {
+        margin-left: auto;
+        gap: 10px;
+        flex-shrink: 0;
+    }
+
+    .btn input {
+        display: none;
+    }
+
+    .btn button {
+        width: 44px;
+        height: 44px;
+        font-size: 18px;
+        flex-shrink: 0;
+    }
+
+    .hamburger {
+        display: block;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+        flex-shrink: 0;
+    }
+
+    .btn span {
+        display: none;
+    }
+
+    .hero-container {
+        height: 500px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .hero-head {
+        margin-left: 16px;
+        padding-top: 80px;
+    }
+
+    .hero-head .industry {
+        font-size: 14px;
+    }
+
+    .hero-head h1 {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+
+    .hero-head .orange {
+        font-size: 32px;
+        margin-top: 0;
+    }
+
+    .hero-head .para {
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+
+    .hero-head .shop-btn,
+    .hero-head .view-btn {
+        padding: 12px 20px;
+        font-size: 13px;
+        margin-right: 10px;
+        margin-bottom: 8px;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 60px;
+        padding: 0 16px;
+        gap: 30px;
+    }
+
+    .container-card-1,
+    .container-card-2,
+    .container-card-3 {
+        width: 100%;
+        max-width: 100%;
+        height: 380px;
+        margin-top: 0;
+        border-radius: 8px;
+    }
+
+    .card {
+        margin-top: 240px;
+        margin-left: 24px;
+        width: calc(100% - 32px);
+    }
+
+    .card h1 {
+        font-size: 18px;
+    }
+
+    .card p {
+        font-size: 14px;
+    }
+
+    .card button {
+        font-size: 13px;
+    }
+
+    .hero-2 {
+        padding-bottom: 80px;
+    }
+
+    .performance {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        padding: 0 16px;
+    }
+
+    .performance .left {
+        margin-top: 0;
+        margin-left: 0;
+        margin-bottom: 40px;
+    }
+
+    .performance .left h1 {
+        font-size: 28px;
+    }
+
+    .performance .left p {
+        font-size: 16px;
+    }
+
+    .performance .right {
+        margin-top: 0;
+        margin-right: 0;
+    }
+
+    .performance .right a {
+        font-size: 14px;
+    }
+
+    .product-grid {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 16px;
+        gap: 30px;
+    }
+
+    .product-card {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .product-img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+
+    .product-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .product-info {
+        width: 100%;
+    }
+
+    .product-info h3 {
+        font-size: 20px;
+    }
+
+    .product-info .price {
+        display: block;
+        margin-right: 0;
+        margin-top: 12px;
+    }
+
+    .product-info span {
+        display: block;
+        text-align: left;
+        margin-top: 8px;
+    }
+
+    .product-info .desc {
+        font-size: 14px;
+    }
+
+    .product-card .badge-1,
+    .product-card .badge-2,
+    .product-card .badge-3 {
+        position: static;
+        margin: 10px 0 0;
+        width: auto;
+    }
+
+    .hero-3 {
+        flex-direction: column;
+        column-gap: 0;
+        padding-top: 60px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .hero-3 .program-left {
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-top: 0;
+        order: 2;
+    }
+
+    .hero-3 .program-left h1 {
+        font-size: 28px;
+    }
+
+    .hero-3 .program-left p {
+        font-size: 16px;
+    }
+
+    .hero-3 .features {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 16px;
+        margin-top: 20px;
+    }
+
+    .features .box {
+        width: 100%;
+        gap: 16px;
+        padding: 16px;
+    }
+
+    .box .icon {
+        font-size: 24px;
+    }
+
+    .box .text h3 {
+        font-size: 18px;
+    }
+
+    .box .text p {
+        font-size: 14px;
+    }
+
+    .hero-3 .program-right {
+        height: 300px;
+        width: 100%;
+        max-width: 100%;
+        margin: 30px 0 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        order: 1;
+        padding: 0 16px;
+    }
+
+    .hero-4 {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .hero-4 h1 {
+        font-size: 36px;
+    }
+
+    .hero-4 p {
+        font-size: 16px;
+        margin-bottom: 24px;
+    }
+
+    .hero-4 .input {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+        padding: 0 16px;
+    }
+
+    .hero-4 .input input {
+        padding: 16px;
+        font-size: 14px;
+        max-width: none;
+        width: 100%;
+    }
+
+    .input button {
+        padding: 14px 16px;
+        font-size: 14px;
+    }
+
+    .hero-5 {
+        display: flex;
+        flex-direction: column;
+        padding-top: 60px;
+        padding-bottom: 80px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .progain,
+    .deploy,
+    .command,
+    .direct {
+        margin-bottom: 32px;
+    }
+
+    .progain h4,
+    .deploy h4,
+    .command h4,
+    .direct h4 {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
+    .progain p,
+    .deploy ul li,
+    .command ul li,
+    .direct p {
+        font-size: 14px;
+    }
+
+    .deploy ul,
+    .command ul {
+        padding-left: 0;
+    }
+
+    .deploy ul li,
+    .command ul li {
+        margin-bottom: 12px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 20px 16px;
+    }
+
+    footer > * {
+        margin-bottom: 12px;
+    }
+
+    .privacy a {
+        padding-right: 12px;
+        font-size: 12px;
+    }
+
+    footer,
+    footer p {
+        font-size: 12px;
+    }
 }

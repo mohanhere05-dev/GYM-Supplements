@@ -75,12 +75,29 @@ body {
     font-size: 0.7rem;
 }
 
-.account-btn {
-    background: var(--accent-orange);
+.btn{
+    background-color: var(--accent-orange);
+    color: white;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+.btn:hover {
     border: none;
-    padding: 8px 15px;
-    font-weight: bold;
+    outline: none;
+    background-color: black;
+    transition: 0.3s ease-in-out;
     cursor: pointer;
+}
+
+.btn span {
+    margin-left: -px;
+    font-size: 12px;
+    color: var(--ORANGE);
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-container {
@@ -581,27 +598,260 @@ footer {
 }
 
 @media (max-width: 480px) {
+    html,
+    body {
+        min-width: 0;
+        overflow-x: hidden;
+    }
+
+    .navbar {
+        padding: 12px 16px;
+        gap: 10px;
+        justify-content:start;
+    }
+
+    .logo {
+        flex-shrink: 0;
+        font-size: 1rem;
+    }
+
+    .logo i {
+        font-size: 18px;
+    }
+
+    .logo h1 {
+        font-size: 16px;
+    }
+
+    .logo span {
+        font-size: 16px;
+        padding-left: 2px;
+    }
+
+    .nav-tools {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-left: auto;
+    }
+
+    .nav-tools input {
+        display: none;
+    }
+
+    .cart-icon {
+        flex-shrink: 0;
+    }
+
+    .btn {
+        flex-shrink: 0;
+        padding: 6px 8px;
+        font-size: 0.8rem;
+    }
+
+    .btn span {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+        flex-shrink: 0;
+        padding: 4px;
+    }
+
+    .main-container {
+        padding: 16px;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .sidebar {
+        display: none;
+        width: 100%;
+        padding: 16px;
+        background: var(--card-bg);
+        border-radius: 8px;
+        margin-bottom: 16px;
+    }
+
+    .sidebar.active {
+        display: block;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .catalog-header {
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    .sub-header {
+        font-size: 0.8rem;
+    }
+
+    .catalog-header h1 {
+        font-size: 1.8rem;
+        margin: 8px 0;
+    }
+
+    .catalog-header p {
+        font-size: 0.9rem;
+        max-width: none;
+    }
+
+    .category-list li {
+        padding: 10px 8px;
+        font-size: 0.85rem;
+    }
+
+    .promo-box {
+        margin-top: 20px;
+        padding: 20px 16px;
+    }
+
+    .promo-box h4 {
+        font-size: 1rem;
+    }
+
+    .promo-box p {
+        font-size: 0.9rem;
+        margin-bottom: 16px;
+    }
+
+    .outline-btn {
+        padding: 10px 20px;
+        font-size: 0.8rem;
+    }
+
+    .filter-bar {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+        padding: 16px 0;
+    }
+
+    .filter-bar span {
+        font-size: 10px;
+    }
+
+    .filter-bar select {
+        width: 100%;
+        min-width: unset;
+        padding: 10px 35px 10px 15px;
+        font-size: 12px;
+    }
+
     .product-grid {
         grid-template-columns: 1fr;
-        gap: 15px;
+        gap: 16px;
+        margin-top: 20px;
     }
 
     .product-card {
-        padding: 8px;
+        padding: 12px;
+        max-width: 100%;
+    }
+
+    .product-img img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
     }
 
     .product-info h3 {
-        font-size: 0.9rem;
+        font-size: 1rem;
+        margin: 12px 0 4px;
+    }
+
+    .type {
+        font-size: 0.65rem;
+    }
+
+    .desc {
+        font-size: 0.7rem;
     }
 
     .price {
-        font-size: 1rem;
+        font-size: 1.1rem;
+        margin: 8px 0;
     }
 
     .add-btn,
     .notify-btn {
+        width: 100%;
         padding: 10px;
-        font-size: 0.9rem;
+        font-size: 0.85rem;
+        font-weight: bold;
+    }
+
+    .badge {
+        font-size: 0.55rem;
+        padding: 3px 6px;
+    }
+
+    .hero-5 {
+        display: flex;
+        flex-direction: column;
+        padding: 40px 16px;
+        gap: 24px;
+    }
+
+    .progain h4 {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
+    .progain p {
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+
+    .progain i {
+        font-size: 24px;
+    }
+
+    .deploy h4,
+    .command h4,
+    .direct h4 {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
+    .deploy ul li,
+    .command ul li,
+    .direct p {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    .direct .address {
+        font-size: 14px;
+    }
+
+    .direct h2 {
+        font-size: 1rem;
+    }
+
+    .cart-sidebar {
+        width: 100vw;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 16px;
+        padding: 16px;
+    }
+
+    footer p {
+        margin: 0;
     }
 }
 

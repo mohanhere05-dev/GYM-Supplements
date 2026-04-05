@@ -4,11 +4,8 @@
 
 <head>
     <meta charset="UTF-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>ProGain Nutrition | Catalog</title>
-
     <link rel="stylesheet" href="category.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
@@ -25,42 +22,31 @@
 
         <div class="nav-tools">
             <input type="text" placeholder="SEARCH INVENTORY" />
-
             <div class="cart-icon" id="cartIcon">
                 <i class="fas fa-shopping-cart"></i>
-
                 <span class="count">3</span>
             </div>
-
-            <button class="account-btn"><i class="fas fa-user"></i> ACCOUNT</button>
+            <button class="btn" onclick="logout()"><i class="fa-regular fa-circle-user"></i><span>Logout</span></button>
+            <button class="hamburger"><i class="fa-solid fa-bars"></i></button>
         </div>
     </header>
 
     <div class="main-container">
         <aside class="sidebar">
             <h3>CATEGORY</h3>
-
             <ul class="category-list">
                 <li class="active">
                     ALL PRODUCTS <i class="fas fa-chevron-right"></i>
                 </li>
-
                 <li>PROTEIN POWDERS</li>
-
                 <li>PRE-WORKOUT</li>
-
                 <li>CREATINE</li>
-
                 <li>VITAMINS</li>
-
                 <li>ACCESSORIES</li>
             </ul>
-
             <div class="promo-box">
                 <h4>PRO MEMBERSHIP</h4>
-
                 <p>Unlock 15% off all orders and free express shipping.</p>
-
                 <button class="outline-btn">JOIN THE TEAM</button>
             </div>
         </aside>
@@ -68,42 +54,32 @@
         <main class="content">
             <div class="catalog-header">
                 <span class="sub-header">⚡ ELITE PERFORMANCE</span>
-
                 <h1>PRODUCT <span>CATALOG</span></h1>
-
                 <p>
                     Engineered for the dedicated athlete. Lab-tested formulations to
                     fuel your evolution.
                 </p>
             </div>
-
             <div class="filter-bar">
                 <span>Sort By:</span>
-
                 <select name="sort" id="sort-dropdown">
                     <option value="newest">Newest Arrivals</option>
                     <option value="price">Price: Low to High</option>
                     <option value="quantity">Quantity Available</option>
                 </select>
             </div>
-
             <div class="product-grid">
                 <div class="product-card">
                     <div class="badge">BESTSELLER</div>
-
                     <div class="product-img">
-                        <img src="img/WHEY ISOLATE GOLD.jpg" alt="Protein" />
+                        <img src="img/WHEY ISOLATE GOLD.jpg" alt="Protein" loading="lazy" />
                     </div>
 
                     <div class="product-info">
                         <span class="type">PROTEIN POWDER</span>
-
                         <h3>WHEY ISOLATE GOLD</h3>
-
                         <p class="desc">24G PROTEIN / 0G SUGAR</p>
-
                         <p class="price">₹2299.00</p>
-
                         <button class="add-btn">
                             <i class="fas fa-shopping-cart"></i> ADD TO CART
                         </button>
@@ -112,18 +88,13 @@
 
                 <div class="product-card">
                     <div class="product-img">
-                        <img src="img/ignition x.jpg" alt="Pre-workout" />
+                        <img src="img/ignition x.jpg" alt="Pre-workout" loading="lazy" />
                     </div>
-
                     <div class="product-info">
                         <span class="type">PRE-WORKOUT</span>
-
                         <h3>IGNITION X</h3>
-
                         <p class="desc">HIGH CAFFEINE / BETA-ALANINE</p>
-
                         <p class="price">₹2199.00</p>
-
                         <button class="add-btn">
                             <i class="fas fa-shopping-cart"></i> ADD TO CART
                         </button>
@@ -132,20 +103,14 @@
 
                 <div class="product-card">
                     <div class="badge dark">OUT OF STOCK</div>
-
                     <div class="product-img gray">
-                        <img src="img/micronized creatine.jpg" alt="Creatine" />
+                        <img src="img/micronized creatine.jpg" alt="Creatine" loading="lazy" />
                     </div>
-
                     <div class="product-info">
                         <span class="type">CREATINE</span>
-
                         <h3>MICRONIZED CREATINE</h3>
-
                         <p class="desc">PURE STRENGTH / 5G SERVE</p>
-
                         <p class="price">₹1499.00</p>
-
                         <button class="notify-btn">
                             <i class="fas fa-bell"></i> NOTIFY ME
                         </button>
@@ -154,18 +119,13 @@
 
                 <div class="product-card">
                     <div class="product-img">
-                        <img src="img/pre-workout blast.jpg" alt="Pre-Workout Blast" />
+                        <img src="img/pre-workout blast.jpg" alt="Pre-Workout Blast" loading="lazy" />
                     </div>
-
                     <div class="product-info">
                         <span class="type">PRE-WORKOUT</span>
-
                         <h3>PRE-WORKOUT BLAST</h3>
-
                         <p class="desc">EXPLOSIVE ENERGY / FOCUS BOOST</p>
-
                         <p class="price">₹799.00</p>
-
                         <button class="add-btn">
                             <i class="fas fa-shopping-cart"></i> ADD TO CART
                         </button>
@@ -174,18 +134,13 @@
 
                 <div class="product-card">
                     <div class="product-img">
-                        <img src="img/omega-3 fish oil.jpg" alt="Omega-3 Fish Oil" />
+                        <img src="img/omega-3 fish oil.jpg" alt="Omega-3 Fish Oil" loading="lazy" />
                     </div>
-
                     <div class="product-info">
                         <span class="type">VITAMINS</span>
-
                         <h3>OMEGA-3 FISH OIL</h3>
-
                         <p class="desc">HEART HEALTH / JOINT SUPPORT</p>
-
                         <p class="price">₹2499.99</p>
-
                         <button class="add-btn">
                             <i class="fas fa-shopping-cart"></i> ADD TO CART
                         </button>
@@ -194,18 +149,13 @@
 
                 <div class="product-card">
                     <div class="product-img">
-                        <img src="img/bcaa recovery.jpg" alt="BCAA Recovery" />
+                        <img src="img/bcaa recovery.jpg" alt="BCAA Recovery" loading="lazy" />
                     </div>
-
                     <div class="product-info">
                         <span class="type">AMINO ACIDS</span>
-
                         <h3>BCAA RECOVERY</h3>
-
                         <p class="desc">MUSCLE RECOVERY / HYDRATION</p>
-
                         <p class="price">₹2999.99</p>
-
                         <button class="add-btn">
                             <i class="fas fa-shopping-cart"></i> ADD TO CART
                         </button>
@@ -214,18 +164,13 @@
 
                 <div class="product-card">
                     <div class="product-img">
-                        <img src="img/multivitamin elite.jpg" alt="Multivitamin Elite" />
+                        <img src="img/multivitamin elite.jpg" alt="Multivitamin Elite" loading="lazy" />
                     </div>
-
                     <div class="product-info">
                         <span class="type">VITAMINS</span>
-
                         <h3>MULTIVITAMIN ELITE</h3>
-
                         <p class="desc">DAILY NUTRITION / IMMUNE SUPPORT</p>
-
                         <p class="price">₹899.00</p>
-
                         <button class="add-btn">
                             <i class="fas fa-shopping-cart"></i> ADD TO CART
                         </button>
@@ -234,18 +179,13 @@
 
                 <div class="product-card">
                     <div class="product-img">
-                        <img src="img/mass gainer.jpg" alt="Mass Gainer" />
+                        <img src="img/mass gainer.jpg" alt="Mass Gainer" loading="lazy" />
                     </div>
-
                     <div class="product-info">
                         <span class="type">WEIGHT GAINER</span>
-
                         <h3>MASS GAINER</h3>
-
                         <p class="desc">HIGH CALORIE / CLEAN CARBS</p>
-
                         <p class="price">₹2799.00</p>
-
                         <button class="add-btn">
                             <i class="fas fa-shopping-cart"></i> ADD TO CART
                         </button>
@@ -254,18 +194,13 @@
 
                 <div class="product-card">
                     <div class="product-img">
-                        <img src="images/fat burner.jpg" alt="Fat Burner" />
+                        <img src="img/fat burner.jpg" alt="Fat Burner" loading="lazy" />
                     </div>
-
                     <div class="product-info">
                         <span class="type">FAT BURNER</span>
-
                         <h3>FAT BURNER</h3>
-
                         <p class="desc">THERMOGENIC / METABOLISM BOOST</p>
-
                         <p class="price">₹1199.00</p>
-
                         <button class="add-btn">
                             <i class="fas fa-shopping-cart"></i> ADD TO CART
                         </button>
@@ -278,15 +213,11 @@
     <div class="cart-sidebar" id="cartSidebar">
         <div class="cart-sidebar-header">
             <h2>Shopping Cart</h2>
-
             <button id="closeCart" aria-label="Close cart">×</button>
         </div>
-
         <ul class="cart-items" id="cartItems"></ul>
-
         <div class="cart-total">
             <span>Total</span>
-
             <span id="cartTotal">0.00</span>
         </div>
     </div>
