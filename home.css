@@ -1013,7 +1013,7 @@ footer {
     }
 
     .btn {
-        margin-left: auto;
+        margin-left: -50px;
         gap: 10px;
         flex-shrink: 0;
     }
