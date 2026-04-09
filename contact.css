@@ -97,7 +97,7 @@ header {
     border: none;
     border-radius: 8px;
     background: #1F1713;
-    color: var(--ORANGE);
+    color: white;
     font-size: 30px;
     width: 60px;
     height: 60px;
@@ -106,7 +106,7 @@ header {
 .btn button:hover {
     cursor: pointer;
     background: rgb(100, 43, 20);
-    color: white;
+    color: var(--ORANGE);
     transition: 0.3s ease-in-out
 }
 
@@ -856,7 +856,7 @@ footer {
     }
 
     .btn {
-        margin-left: auto;
+        margin-left: 80px;
         gap: 4px;
         display: flex;
         align-items: center;
@@ -867,6 +867,7 @@ footer {
         width: 34px;
         height: 34px;
         font-size: 18px;
+        color: white;
         flex-shrink: 0;
         padding: 0;
     }
@@ -887,6 +888,7 @@ footer {
 
     .get {
         height: auto;
+        margin-top: 70px;
         padding: 60px 16px 40px;
         text-align: center;
     }
@@ -1065,8 +1067,8 @@ footer {
         flex-direction: column;
         padding: 40px 16px;
         gap: 32px;
-        align-items: center;
-        text-align: center;
+        align-items: start;
+        
     }
 
     .contain-1 h1 {
