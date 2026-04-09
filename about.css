@@ -184,7 +184,7 @@ header {
 .main-container {
     width: 100%;
     height: 700px;
-    background: url(img/about-hero.jpg);
+    background: url(img/about-hero.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -303,7 +303,7 @@ header {
     border-radius: 12px;
     width: 600px;
     height: 670px;
-    background: url(img/Vintage\ doctor.jpg);
+    background: url(img/vitamin.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
