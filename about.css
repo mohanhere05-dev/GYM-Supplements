@@ -237,6 +237,7 @@ header {
 .our-story {
     display: flex;
     justify-content: space-evenly;
+    width: 100%;
     padding-top: 150px;
     gap: 150px;
 }
