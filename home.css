@@ -648,12 +648,12 @@ header {
 .hero-3 .program-right {
     height: 700px;
     width: 100%;
-    background-image: url(img/vitamin.webp);
+    background-image: url(img/Vintage\ doctor.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-clip: border-box;
-    margin-right: 170px;
+    margin-right: 80px;
     margin-bottom: 150px;
     border: none;
     border-radius: 12px;
