@@ -275,28 +275,6 @@ header {
     transition: 0.3s ease-in-out;
 }
 
-@media (max-width: 1229px) {
-    .hero-head h1 {
-        font-size: 55px;
-    }
-
-    .hero-head .orange {
-        margin-top: -14px;
-    }
-
-    .hero-head .para {
-        font-size: 14px;
-    }
-
-    .hero-head .shop-btn {
-        padding: 14px 24px;
-    }
-
-    .hero-head .view-btn {
-        padding: 14px 24px;
-    }
-}
-
 .cards {
     display: flex;
     justify-content: space-evenly;
@@ -565,27 +543,6 @@ header {
 }
 
 
-@media (max-width) {
-    .product-grid {
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    .badge-1 {
-        display: none;
-    }
-
-    .badge-2 {
-        display: none;
-    }
-
-    .badge-3 {
-        display: none;
-    }
-}
-
-
 .hero-3 {
     width: 100%;
     padding-top: 150px;
@@ -786,27 +743,6 @@ header {
     transition: 0.2s ease-in-out;
 }
 
-@media (max-width) {
-    .hero-4 {
-        display: block;
-        text-align: center;
-        
-    }
-    .hero-4 .input input {
-        padding: 0;
-        padding-right: 30px;
-        padding-top: 30px;
-        padding-bottom: 30px;
-        padding-left: 30px;
-        margin-left: 0;
-    }
-
-    .input button {
-        margin-top: 30px;
-    }
-
-}
-
 
 .hero-5 {
     display: flex;
@@ -906,18 +842,6 @@ header {
     font-weight: 800;
 }
 
-@media (max-width) {
-    .hero-5 {
-        display: block;
-        padding-left: 100px;
-    }
-
-    .progain {
-        margin-bottom: 30px;
-    }
-
-}
-
 footer {
     width: 100%;
     display: flex;
@@ -940,22 +864,6 @@ footer {
 .privacy a:hover {
     color: var(--ORANGE);
     transition: 0.3s ease-in-out;
-}
-
-@media (max-width) {
-    footer {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        gap: 200px;
-
-    }
-
-    footer,
-    p {
-        font-size: 10px;
-    }
-
 }
 
 /* Mobile Responsiveness: max-width 480px */
