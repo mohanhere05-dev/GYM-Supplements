@@ -152,6 +152,53 @@ header {
     display: none;
 }
 
+@media (max-width:1024px) {
+    body {
+        width: 100vw;
+    }
+
+    .navbar a {
+        display: none;
+    }
+
+    .logo {
+        margin-left: 50px;
+        width: 100%;
+    }
+
+    .btn {
+        padding-right: 50px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .navbar.active {
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+        border-radius: 12px;
+        height: 400px;
+        top: 70px;
+        right: 30px;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        position: absolute;
+        background-color: #1F1713;
+        color: white;
+        transform: scaleX(1.1);
+        transition: all 0.3s ease;
+    }
+
+    .navbar.active a {
+        display: block;
+        padding: 10px;
+        border-bottom: 4px solid white;
+        width: 100%;
+    }
+}
 
 @media (max-width:768px) {
     .btn input {
