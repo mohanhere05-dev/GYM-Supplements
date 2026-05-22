@@ -87,6 +87,148 @@ body {
     padding: 20px;
 }
 
+/* Tablet Responsiveness: 481px - 1023px */
+@media (min-width: 481px) and (max-width: 1023px) {
+    .navbar {
+        padding: 1rem 2rem;
+    }
+
+    .logo {
+        font-size: 1rem;
+    }
+
+    .logo strong {
+        font-size: 20px;
+    }
+
+    .logo i {
+        font-size: 20px;
+    }
+
+    .btn-outline {
+        font-size: 13px;
+        padding: 0.5rem 0.8rem;
+    }
+
+    .login-card {
+        padding: 2rem;
+        max-width: 420px;
+    }
+
+    .card-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .card-header p {
+        font-size: 0.85rem;
+    }
+
+    .form-group {
+        margin-bottom: 1rem;
+    }
+
+    label {
+        font-size: 0.65rem;
+    }
+
+    input[type="email"],
+    .input-icon-wrapper input {
+        padding: 0.7rem 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .btn-submit {
+        padding: 0.8rem;
+        font-size: 14px;
+    }
+
+    .social-buttons {
+        gap: 10px;
+    }
+
+    .btn-social {
+        padding: 0.6rem;
+        font-size: 0.8rem;
+    }
+
+    .btn-social img {
+        width: 16px;
+    }
+
+    .card-footer {
+        font-size: 0.8rem;
+    }
+
+    footer {
+        padding: 15px 20px;
+        gap: 100px !important;
+    }
+}
+
+/* Desktop Responsiveness: 1024px - 1199px */
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .navbar {
+        padding: 1.3rem 3rem;
+    }
+
+    .logo {
+        font-size: 1.15rem;
+    }
+
+    .logo strong {
+        font-size: 24px;
+    }
+
+    .login-card {
+        padding: 2.5rem;
+        max-width: 440px;
+    }
+
+    .card-header h1 {
+        font-size: 1.6rem;
+    }
+
+    footer {
+        gap: 400px;
+    }
+}
+
+/* Large Screen Responsiveness: 1200px+ */
+@media (min-width: 1200px) {
+    .navbar {
+        padding: 1.5rem 4rem;
+    }
+
+    .logo {
+        font-size: 1.25rem;
+    }
+
+    .logo strong {
+        font-size: 28px;
+    }
+
+    .login-card {
+        padding: 3rem;
+        max-width: 460px;
+    }
+
+    .card-header h1 {
+        font-size: 1.75rem;
+    }
+
+    footer {
+        gap: 580px;
+    }
+}
+
+.login-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
 .login-card {
     background: var(--card-surface);
     padding: 3rem;

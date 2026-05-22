@@ -162,10 +162,10 @@ header {
         gap: 0;
     }
 
-    .navbar a{
+    .navbar a {
         margin-right: 30px;
     }
-    
+
     .logo {
         margin-left: -10px;
         margin-right: 130px;
@@ -223,6 +223,7 @@ header {
     font-size: 20px;
     margin-top: 100px;
 }
+
 .hero-head h1 {
     font-size: 80px;
     font-weight: 800;
@@ -655,7 +656,7 @@ header {
 
     .features .box {
         margin-bottom: 50px;
-        
+
     }
 
     .features .box p h1 {
@@ -743,6 +744,422 @@ header {
     transition: 0.2s ease-in-out;
 }
 
+
+/* Tablet Responsiveness: 481px - 1023px */
+@media (min-width: 481px) and (max-width: 1023px) {
+    header {
+        padding: 16px 20px;
+    }
+
+    .logo {
+        margin-left: 30px;
+        gap: 8px;
+    }
+
+    .logo i {
+        font-size: 32px;
+    }
+
+    .logo h1 {
+        font-size: 20px;
+    }
+
+    .navbar {
+        gap: 12px;
+        margin-left: 30px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        margin-right: 12px;
+    }
+
+    .btn {
+        margin-right: 20px;
+        gap: 12px;
+    }
+
+    .btn input {
+        padding: 12px 16px;
+        flex: 0.8;
+        padding-right: 80px;
+    }
+
+    .hero-container {
+        height: 500px;
+        margin-bottom: 40px;
+    }
+
+    .hero-head {
+        margin-left: 40px;
+        padding-top: 60px;
+    }
+
+    .hero-head .industry {
+        font-size: 14px;
+        margin-top: 40px;
+    }
+
+    .hero-head h1 {
+        font-size: 48px;
+        margin-bottom: 12px;
+    }
+
+    .hero-head .para {
+        font-size: 18px;
+        max-width: 500px;
+    }
+
+    .hero-head .shop-btn,
+    .hero-head .view-btn {
+        padding: 16px 32px;
+        font-size: 14px;
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 0 20px;
+        margin-bottom: 60px;
+    }
+
+    .container-card-1,
+    .container-card-2,
+    .container-card-3 {
+        width: calc(50% - 10px);
+        height: 350px;
+        margin-top: 20px;
+    }
+
+    .card {
+        margin-top: 200px;
+        margin-left: 20px;
+        width: calc(100% - 40px);
+    }
+
+    .card h1 {
+        font-size: 16px;
+    }
+
+    .card p {
+        font-size: 13px;
+    }
+
+    .hero-2 {
+        padding-bottom: 80px;
+    }
+
+    .performance {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        padding: 0 20px;
+    }
+
+    .performance .left {
+        margin-top: 0;
+        margin-left: 0;
+        margin-bottom: 30px;
+    }
+
+    .performance .left h1 {
+        font-size: 32px;
+    }
+
+    .performance .left p {
+        font-size: 16px;
+    }
+
+    .performance .right {
+        margin-top: 0;
+        margin-right: 0;
+    }
+
+    .performance .right a {
+        font-size: 14px;
+    }
+
+    .product-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 0 20px;
+    }
+
+    .product-card {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        margin-top: 0;
+    }
+
+    .product-img {
+        width: 100%;
+        height: auto;
+        max-width: 500px;
+    }
+
+    .product-info {
+        width: 100%;
+    }
+
+    .product-info h3 {
+        font-size: 20px;
+    }
+
+    .product-info .price {
+        display: block;
+        margin-right: 0;
+    }
+
+    .product-info span {
+        display: block;
+        text-align: left;
+    }
+
+    .product-info .desc {
+        font-size: 14px;
+    }
+
+    .hero-3 {
+        padding-top: 80px;
+        padding-left: 40px;
+        padding-right: 40px;
+        column-gap: 30px;
+    }
+
+    .hero-3 .program-left {
+        padding-left: 0;
+        margin-top: 0;
+    }
+
+    .hero-3 .program-left h1 {
+        font-size: 36px;
+    }
+
+    .hero-3 .program-left p {
+        font-size: 16px;
+    }
+
+    .hero-3 .features {
+        gap: 20px;
+    }
+
+    .features .box {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .hero-3 .program-right {
+        height: 400px;
+        margin-right: 0;
+        margin-bottom: 60px;
+    }
+
+    .hero-4 {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .hero-4 h1 {
+        font-size: 48px;
+    }
+
+    .hero-4 p {
+        font-size: 18px;
+    }
+
+    .hero-4 .input {
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 0 20px;
+        max-width: 100%;
+    }
+
+    .hero-4 .input input {
+        padding: 16px;
+        font-size: 14px;
+        max-width: 100%;
+        padding-right: 300px;
+    }
+
+    .hero-5 {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    footer {
+        gap: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+/* Desktop Responsiveness: 1024px - 1199px */
+@media (min-width: 1024px) and (max-width: 1199px) {
+    header {
+        padding: 20px 40px;
+    }
+
+    .logo {
+        margin-left: 80px;
+    }
+
+    .btn {
+        margin-right: 80px;
+    }
+
+    .btn input {
+        padding-right: 200px;
+    }
+
+    .hero-head {
+        margin-left: 60px;
+    }
+
+    .hero-head h1 {
+        font-size: 64px;
+    }
+
+    .cards {
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    .container-card-1,
+    .container-card-2,
+    .container-card-3 {
+        width: calc(33.333% - 14px);
+        height: 450px;
+    }
+
+    .performance .left {
+        margin-left: 100px;
+    }
+
+    .performance .right {
+        margin-right: 100px;
+    }
+
+    .product-card {
+        width: 450px;
+        height: 700px;
+    }
+
+    .product-img {
+        width: 450px;
+        height: 450px;
+    }
+
+    .product-info {
+        width: 450px;
+    }
+
+    .hero-3 .program-left {
+        padding-left: 150px;
+    }
+
+    .hero-3 .program-right {
+        margin-right: 60px;
+    }
+
+    .hero-5 {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
+
+/* Large Screen Responsiveness: 1200px+ */
+@media (min-width: 1200px) {
+    header {
+        padding: 28px 60px;
+    }
+
+    .logo {
+        margin-left: 140px;
+        width: auto;
+    }
+
+    .btn {
+        margin-right: 160px;
+    }
+
+    .hero-container {
+        height: 700px;
+        margin-bottom: 60px;
+    }
+
+    .hero-head {
+        margin-left: 80px;
+        padding-top: 30px;
+    }
+
+    .hero-head .industry {
+        font-size: 20px;
+        margin-top: 100px;
+    }
+
+    .hero-head h1 {
+        font-size: 80px;
+    }
+
+    .hero-head .para {
+        font-size: 28px;
+    }
+
+    .cards {
+        justify-content: space-evenly;
+        gap: 30px;
+        padding: 0;
+    }
+
+    .container-card-1,
+    .container-card-2,
+    .container-card-3 {
+        width: 450px;
+        height: 550px;
+        margin-top: 100px;
+    }
+
+    .product-card {
+        width: 500px;
+        height: 750px;
+    }
+
+    .product-img {
+        width: 506px;
+        height: 506px;
+    }
+
+    .product-info {
+        width: 506px;
+    }
+
+    .hero-3 {
+        column-gap: 60px;
+    }
+
+    .hero-3 .program-left {
+        padding-left: 200px;
+    }
+
+    .hero-3 .program-right {
+        margin-right: 80px;
+    }
+
+    .hero-5 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    footer {
+        gap: 580px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
 
 .hero-5 {
     display: flex;
@@ -868,6 +1285,7 @@ footer {
 
 /* Mobile Responsiveness: max-width 480px */
 @media (max-width: 480px) {
+
     html,
     body {
         min-width: 0;
@@ -1261,7 +1679,7 @@ footer {
         padding: 20px 16px;
     }
 
-    footer > * {
+    footer>* {
         margin-bottom: 12px;
     }
 

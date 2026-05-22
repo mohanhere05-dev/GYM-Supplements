@@ -75,7 +75,7 @@ body {
     font-size: 0.7rem;
 }
 
-.btn{
+.btn {
     background-color: var(--accent-orange);
     color: white;
     padding: 8px;
@@ -104,6 +104,129 @@ body {
     display: flex;
     padding: 40px 5%;
     gap: 20px;
+}
+
+/* Tablet Responsiveness: 481px - 1023px */
+@media (min-width: 481px) and (max-width: 1023px) {
+    .navbar {
+        padding: 12px 3%;
+    }
+
+    .logo {
+        font-size: 1rem;
+    }
+
+    .logo h1 {
+        font-size: 18px;
+    }
+
+    .nav-tools {
+        gap: 12px;
+    }
+
+    .nav-tools input {
+        padding: 6px;
+        font-size: 0.65rem;
+    }
+
+    .btn {
+        padding: 6px 10px;
+        font-size: 11px;
+    }
+
+    .main-container {
+        flex-direction: column;
+        padding: 20px 3%;
+        gap: 15px;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding-right: 0;
+        padding-bottom: 20px;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .catalog-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .catalog-header p {
+        font-size: 0.9rem;
+    }
+
+    .filter-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 15px;
+    }
+
+    .promo-box {
+        padding: 20px 15px;
+    }
+
+    .promo-box h4 {
+        font-size: 0.9rem;
+    }
+
+    .promo-box p {
+        font-size: 0.8rem;
+    }
+}
+
+/* Desktop Responsiveness: 1024px - 1199px */
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .navbar {
+        padding: 15px 4%;
+    }
+
+    .main-container {
+        padding: 30px 4%;
+    }
+
+    .sidebar {
+        width: 25%;
+    }
+
+    .content {
+        width: 75%;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    }
+}
+
+/* Large Screen Responsiveness: 1200px+ */
+@media (min-width: 1200px) {
+    .navbar {
+        padding: 15px 5%;
+    }
+
+    .main-container {
+        padding: 40px 5%;
+    }
+
+    .sidebar {
+        width: 20%;
+    }
+
+    .content {
+        width: 80%;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
 }
 
 .sidebar {
@@ -598,6 +721,7 @@ footer {
 }
 
 @media (max-width: 480px) {
+
     html,
     body {
         min-width: 0;
@@ -607,7 +731,7 @@ footer {
     .navbar {
         padding: 12px 16px;
         gap: 10px;
-        justify-content:start;
+        justify-content: start;
     }
 
     .logo {

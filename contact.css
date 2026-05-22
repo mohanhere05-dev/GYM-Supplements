@@ -84,6 +84,307 @@ header {
     transition: 0.3s ease-in-out;
 }
 
+/* Tablet Responsiveness: 481px - 1023px */
+@media (min-width: 481px) and (max-width: 1023px) {
+    header {
+        padding: 16px 20px;
+    }
+
+    .logo {
+        margin-left: 40px;
+        gap: 8px;
+    }
+
+    .logo i {
+        font-size: 32px;
+    }
+
+    .logo h1 {
+        font-size: 18px;
+    }
+
+    .navbar {
+        gap: 12px;
+        padding-left: 150px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        margin-right: 12px;
+    }
+
+    .btn {
+        margin-left: 20px;
+        gap: 30px;
+    }
+
+    .btn button {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+    }
+
+    .get {
+        height: 150px;
+        padding-left: 100px;
+        padding-top: 100px;
+    }
+
+    .get h2 {
+        font-size: 54px;
+    }
+
+    .get p {
+        font-size: 16px;
+        width: 500px;
+    }
+
+    .drop {
+        margin-top: 60px;
+        padding-top: 80px;
+    }
+
+    .drop h3 {
+        font-size: 24px;
+    }
+
+    .drop p {
+        font-size: 14px;
+    }
+
+    .contact-section {
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 100px;
+        gap: 30px;
+    }
+
+    .left-side {
+        width: 100%;
+    }
+
+    .right-side {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .field {
+        font-size: 12px;
+    }
+
+    .field input,
+    .field select,
+    .field textarea {
+        font-size: 14px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .send-btn {
+        padding: 16px 20px;
+        font-size: 14px;
+    }
+
+    .info-box {
+        flex-direction: column;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .location,
+    .support {
+        width: 100%;
+        height: auto;
+    }
+
+    .map-box {
+        height: 300px;
+    }
+
+    .map-box h1 {
+        font-size: 18px;
+        margin-left: 0;
+    }
+
+    .map-box iframe {
+        margin-left: 0;
+    }
+
+    .join {
+        margin-left: 0;
+        margin-top: 40px;
+    }
+
+    .join h3 {
+        font-size: 20px;
+    }
+
+    .join p {
+        font-size: 14px;
+    }
+
+    .up-footer {
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+}
+
+/* Desktop Responsiveness: 1024px - 1199px */
+@media (min-width: 1024px) and (max-width: 1199px) {
+    header {
+        padding: 20px 40px;
+    }
+
+    .logo {
+        margin-left: 100px;
+    }
+
+    .navbar {
+        padding-left: 250px;
+    }
+
+    .btn {
+        margin-left: 30px;
+    }
+
+    .get {
+        padding-left: 150px;
+    }
+
+    .get h2 {
+        font-size: 64px;
+    }
+
+    .get p {
+        font-size: 18px;
+    }
+
+    .contact-section {
+        padding-left: 150px;
+        padding-right: 100px;
+    }
+
+    .left-side {
+        width: 50%;
+    }
+
+    .right-side {
+        width: 50%;
+        margin-right: 100px;
+    }
+
+    .location,
+    .support {
+        width: 100%;
+    }
+
+    .map-box {
+        height: 350px;
+    }
+
+    .up-footer {
+        padding: 60px 40px;
+    }
+
+    footer {
+        gap: 300px;
+    }
+}
+
+/* Large Screen Responsiveness: 1200px+ */
+@media (min-width: 1200px) {
+    header {
+        padding: 28px 60px;
+    }
+
+    .logo {
+        margin-left: 140px;
+    }
+
+    .navbar {
+        padding-left: 400px;
+    }
+
+    .btn {
+        margin-left: 40px;
+    }
+
+    .get {
+        padding-left: 250px;
+    }
+
+    .get h2 {
+        font-size: 85px;
+    }
+
+    .get p {
+        font-size: 20px;
+        width: 670px;
+    }
+
+    .drop {
+        padding-top: 110px;
+    }
+
+    .drop h3 {
+        font-size: 32px;
+    }
+
+    .contact-section {
+        padding-left: 250px;
+        padding-right: auto;
+    }
+
+    .left-side {
+        width: 55%;
+    }
+
+    .right-side {
+        width: 40%;
+        margin-right: 250px;
+    }
+
+    .location,
+    .support {
+        width: 340px;
+        height: 240px;
+    }
+
+    .map-box {
+        height: 400px;
+    }
+
+    .up-footer {
+        padding: 100px;
+    }
+
+    footer {
+        gap: 580px;
+    }
+}
+
+.navbar a {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-right: 24px;
+}
+
+.navbar a:hover {
+    color: var(--ORANGE);
+    transition: 0.3s ease-in-out;
+}
+
 
 .btn {
     margin-left: 40px;
@@ -800,6 +1101,7 @@ footer {
 
 /* Mobile Responsiveness: max-width 480px */
 @media (max-width: 480px) {
+
     html,
     body {
         min-width: 0;
@@ -1068,7 +1370,7 @@ footer {
         padding: 40px 16px;
         gap: 32px;
         align-items: start;
-        
+
     }
 
     .contain-1 h1 {
@@ -1104,7 +1406,7 @@ footer {
         text-align: center;
     }
 
-    footer > * {
+    footer>* {
         margin-bottom: 8px;
         width: 100%;
         text-align: center;
