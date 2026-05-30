@@ -30,7 +30,7 @@ header {
     align-items: center;
     background-color: #120d0a;
     color: white;
-    padding: 28px 12px;
+    padding: 12px 8px;
     flex-wrap: nowrap;
     border-bottom: 1px solid #3b3b3b;
 }
@@ -46,13 +46,12 @@ header {
 }
 
 .logo i {
-    font-size: 40px;
+    font-size: 24px;
     rotate: 130deg;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: var(--ORANGE);
-    margin-right: 10px;
 }
 
 .logo i:hover {
@@ -63,8 +62,8 @@ header {
 
 .logo h1 {
     display: flex;
-    font-size: 28px;
-    margin-right: 24px;
+    font-size: 24px;
+    margin-right: 18px;
 }
 
 .navbar {
@@ -76,7 +75,7 @@ header {
 
 .navbar a {
     color: white;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
     text-decoration: none;
     margin-right: 24px;
@@ -92,12 +91,11 @@ header {
     margin-right: 160px;
     display: flex;
     gap: 30px;
-    width: 100%;
 }
 
 .btn input {
     flex: 1;
-    padding: 24px;
+    padding: 8px;
     border: none;
     border-radius: 8px;
     background: #1F1713;
@@ -118,7 +116,7 @@ header {
     border-radius: 8px;
     background: #1F1713;
     color: white;
-    font-size: 30px;
+    font-size: 16px;
     width: 60px;
     height: 60px;
 }

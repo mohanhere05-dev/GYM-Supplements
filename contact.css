@@ -22,34 +22,34 @@ body {
 }
 
 header {
+    width: 100vw;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #120d0a;
     color: white;
-    padding: 28px 12px;
+    padding: 12px 8px;
+    flex-wrap: nowrap;
     border-bottom: 1px solid #3b3b3b;
 }
-
-
 
 .logo {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
-    margin-left: 140px;
+    margin-left: 40px;
+    width: 100vw;
 
 }
 
 .logo i {
-    font-size: 40px;
+    font-size: 24px;
     rotate: 130deg;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     color: var(--ORANGE);
-    margin-right: 10px;
 }
 
 .logo i:hover {
@@ -59,24 +59,23 @@ header {
 }
 
 .logo h1 {
-    color: white;
+    display: flex;
     font-size: 24px;
+    margin-right: -200px
 }
 
 .navbar {
     gap: 16px;
     display: flex;
-    text-align: center;
-    padding-left: 400px;
 
 }
 
 .navbar a {
     color: white;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
     text-decoration: none;
-    margin-right: 24px;
+    margin-left: -24px;
 }
 
 .navbar a:hover {
@@ -84,6 +83,37 @@ header {
     transition: 0.3s ease-in-out;
 }
 
+
+.btn {
+    display: flex;
+    gap: 30px;
+}
+
+.btn button {
+    border: none;
+    border-radius: 8px;
+    background: #1F1713;
+    color: white;
+    font-size: 12px;
+    width: 60px;
+    height: 60px;
+
+}
+
+.btn button:hover {
+    cursor: pointer;
+    color: var(--ORANGE);
+    transition: 0.3s ease-in-out
+}
+
+.btn span {
+    font-size: 12px;
+    color: var(--ORANGE);
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* Tablet Responsiveness: 481px - 1023px */
 @media (min-width: 481px) and (max-width: 1023px) {
     header {
