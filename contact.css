@@ -813,7 +813,7 @@ header {
 }
 
 .location {
-    width: 340px;
+    width: max-content;
     height: 240px;
     padding: 30px;
     background-color: #282626;
@@ -833,10 +833,11 @@ header {
 
 .location p {
     color: #bfbfbf;
+    width: 200px;
 }
 
 .support {
-    width: 340px;
+    width: max-content;
     height: 240px;
     padding: 30px;
     background-color: #282626;
@@ -856,6 +857,7 @@ header {
 
 .support p {
     color: #bfbfbf;
+    width: 200px;
 }
 
 @media (max-width:768px) {
